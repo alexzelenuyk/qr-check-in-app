@@ -74,11 +74,11 @@ const NavBar = () => {
                     <Image
                       src={user.picture}
                       alt="Profile"
-                      className="nav-user-profile rounded-circle"
+                      // className="nav-user-profile rounded-circle"
                       width="50"
                       height="50"
-                      decode="async"
-                      data-testid="navbar-picture-desktop"
+                      // decode="async"
+                      // data-testid="navbar-picture-desktop"
                     />
                   </DropdownToggle>
                   <DropdownMenu>
@@ -121,11 +121,11 @@ const NavBar = () => {
                     <Image
                       src={user.picture}
                       alt="Profile"
-                      className="nav-user-profile d-inline-block rounded-circle mr-3"
+                      // className="nav-user-profile d-inline-block rounded-circle mr-3"
                       width="50"
                       height="50"
-                      decode="async"
-                      data-testid="navbar-picture-mobile"
+                      // decode="async"
+                      // data-testid="navbar-picture-mobile"
                     />
                     <h6 className="d-inline-block" data-testid="navbar-user-mobile">
                       {user.name}
