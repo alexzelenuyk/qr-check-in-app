@@ -6,7 +6,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - env | grep -e AUTH0_SECRET -e AUTH0_BASE_URL -e AUTH0_ISSUER_BASE_URL -e AUTH0_CLIENT_ID -e AUTH0_CLIENT_SECRET -e AUTH0_AUDIENCE -e AUTH0_SCOPE >> .env.local
+        - env | grep -e AUTH0_ >> .env.production
         - npm run build
   artifacts:
     baseDirectory: .next
