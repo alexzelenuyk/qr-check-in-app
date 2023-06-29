@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+import Image from 'next/image';
 import { useUser } from '@auth0/nextjs-auth0/client';
 
 import PageLink from './PageLink';
@@ -70,7 +71,7 @@ const NavBar = () => {
               {user && (
                 <UncontrolledDropdown nav inNavbar data-testid="navbar-menu-desktop">
                   <DropdownToggle nav caret id="profileDropDown">
-                    <img
+                    <Image
                       src={user.picture}
                       alt="Profile"
                       className="nav-user-profile rounded-circle"
@@ -117,7 +118,7 @@ const NavBar = () => {
                 data-testid="navbar-menu-mobile">
                 <NavItem>
                   <span className="user-info">
-                    <img
+                    <Image
                       src={user.picture}
                       alt="Profile"
                       className="nav-user-profile d-inline-block rounded-circle mr-3"
