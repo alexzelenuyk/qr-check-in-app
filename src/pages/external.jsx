@@ -12,8 +12,9 @@ function External() {
   const callApi = async () => {
     setState(previous => ({ ...previous, isLoading: true }))
 
+    console.log("I'm in call api");
     try {
-      const response = await fetch('/api/shows');
+      const response = await fetch('/api/customBackendAction');
       const data = await response.json();
 
       setState(previous => ({ ...previous, response: data, error: undefined }))

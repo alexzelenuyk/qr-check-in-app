@@ -2,6 +2,7 @@ import React from 'react';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
 export default withPageAuthRequired(function SSRPage() {
+  console.log("I'm rendering client-side");
   return (
     <>
       <div className="mb-5" data-testid="csr">

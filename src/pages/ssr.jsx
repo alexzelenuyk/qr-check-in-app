@@ -4,6 +4,8 @@ import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 import Highlight from '../components/Highlight';
 
 export default function SSRPage({ user }) {
+  console.log("I'm rendering server-side");
+
   return (
     <>
       <div className="mb-5" data-testid="ssr">
